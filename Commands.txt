@@ -1,0 +1,8 @@
+Login:
+$ http post http://localhost/API_PHP/API_key_authentication/api/login.php username=gedas password=gedas
+
+Refresh token
+$ http post http://localhost/API_PHP/API_key_authentication/api/refresh.php token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYzOTA3NDk0N30.Q7iA-z3KrKQTKalisEFX_x6D3YTb9XBBQPkNcnxTH0c
+
+Login with token
+$ http http://localhost/API_PHP/API_key_authentication/api/tasks "Authorization:Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsIm5hbWUiOiJnZWRhcyIsImV4cCI6MTYzODY0MzI0N30.2KPGXvSg5E2IkQDRQS-dcHqvU1WfyTStLgS2tFZmeX0"
